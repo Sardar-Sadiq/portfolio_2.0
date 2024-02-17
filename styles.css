@@ -1,37 +1,25 @@
+html,
 body {
   background: #e1dcce;
   color: #464138;
   font-family: "Grifinito L";
   margin: 0;
   padding: 0;
-  
 }
-#main{
-  height: auto;
-  width: auto;
-}
-.cursor{
-  height: 20px;
-  width: 20px;
-  background-color: rgb(0, 0, 0);
-  mix-blend-mode: difference;
-  border-radius: 50%;
-  position: absolute;
-  transition: all linear 0.150s;
-}
+
 .smooth-scroller {
   overflow: hidden;
 }
 
 .hero-scroller {
-  height: 250vh;
+  height: 220vh;
   overflow: hidden;
 }
 
 .section {
   position: relative;
   display: flex;
- 
+  min-height: 100vh;
   padding: 50px;
   justify-content: center;
 }
@@ -41,8 +29,8 @@ body {
   max-width: 200vh;
   padding: 50px;
   justify-content: center;
-  padding-top:5rem;
-  flex-wrap: nowrap
+  padding-top: 5rem;
+  flex-wrap: nowrap;
 }
 
 .copy {
@@ -52,27 +40,17 @@ body {
   align-items: center;
 }
 
-
-.copy-1 {
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.copy-2{
+.copy-2 {
   background: #d4cfc0;
   padding-top: 7rem;
 }
 
 .section-wrapper {
-  
   max-width: 1400px;
 }
 .section-wrapper-1 {
   max-width: 1000px;
 }
-
-
 
 .content {
   width: 100%;
@@ -130,18 +108,10 @@ p {
   line-height: 1.2em;
 }
 
-
-
-
-
-
-
 .ag-format-container {
   width: 1142px;
   margin: 0 auto;
 }
-
-
 
 .ag-courses_box {
   display: -webkit-box;
@@ -177,8 +147,7 @@ p {
 .ag-courses-item_link:hover,
 .ag-courses-item_link:hover .ag-courses-item_date {
   text-decoration: none;
-  color: #FFF;
-  
+  color: #fff;
 }
 .ag-courses-item_link:hover .ag-courses-item_bg {
   -webkit-transform: scale(10);
@@ -193,14 +162,14 @@ p {
 
   font-weight: bold;
   font-size: 30px;
-  color: #FFF;
+  color: #fff;
 
   z-index: 2;
   position: relative;
 }
 .ag-courses-item_date-box {
   font-size: 18px;
-  color: #FFF;
+  color: #fff;
 
   z-index: 2;
   position: relative;
@@ -209,14 +178,14 @@ p {
   font-weight: bold;
   color: #f9b234;
 
-  -webkit-transition: color .5s ease;
-  -o-transition: color .5s ease;
-  transition: color .5s ease
+  -webkit-transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
 .ag-courses-item_bg {
   height: 128px;
   width: 128px;
-  background-color: #43766C;
+  background-color: #43766c;
 
   z-index: 1;
   position: absolute;
@@ -225,12 +194,12 @@ p {
 
   border-radius: 50%;
 
-  -webkit-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 .ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #76453B;
+  background-color: #76453b;
 }
 .ag-courses_item:nth-child(3n) .ag-courses-item_bg {
   background-color: #e44002;
@@ -242,16 +211,14 @@ p {
   background-color: #cd3e94;
 }
 .ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #6096B4;
+  background-color: #6096b4;
 }
 .ag-courses_item:nth-child(7n) .ag-courses-item_bg {
   background-color: #765827;
 }
 .ag-courses_item:nth-child(8n) .ag-courses-item_bg {
-  background-color: #7F669D;
+  background-color: #7f669d;
 }
-
-
 
 figure {
   position: relative;
@@ -265,7 +232,6 @@ figure {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
-  
 }
 
 figure:hover {
@@ -295,12 +261,10 @@ figure h1 {
   transform: scale(1);
   transition: 0.25s ease;
   z-index: 999;
- 
 }
 figure img {
   height: 100%;
   transition: 0.25s;
-  
 }
 figure figcaption {
   position: absolute;
@@ -309,9 +273,9 @@ figure figcaption {
   width: 100%;
   margin: 0;
   padding: 30px;
-  background-color: rgba(116, 105, 76, 0.85);;
- 
-  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.85);
+
+  color: rgb(224, 224, 224);
   line-height: 1;
   transition: 0.25s;
 }
@@ -333,35 +297,30 @@ figure figcaption button {
   background-color: #998d7b;
   border: none;
   border-radius: 5px;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 14px;
   cursor: pointer;
-  
+  transition: all 0.3s;
 }
-figure figcaption button:hover{
-
-  color: rgb(255, 255, 255);
- 
-  background-color: rgb(49, 49, 49);
+figure figcaption button:hover {
+  color: rgb(62, 62, 62);
+  scale: 1.1;
+  background-color: rgb(230, 230, 230);
 }
 
-
-
-#atag{
+#atag {
   text-decoration: none;
-  
 }
 
-.color{
+.color {
   color: black;
 }
 
-.skill{
+.skill {
   font-size: 2rem;
   line-height: normal;
-  
 }
-.head{
+.head {
   font-size: 2rem;
   line-height: normal;
   position: absolute;
@@ -369,54 +328,45 @@ figure figcaption button:hover{
   text-decoration: 2px underline;
 }
 
-#h1{
+#h1 {
   font-size: 2rem;
- 
+
   line-height: normal;
 }
 
-#contact{
+#contact {
   font-size: 5rem;
   color: black;
-  display: flex;
-  justify-content: center;
 }
 
-.option{
-  
+.option {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.project-links{
+.project-links {
   padding: 10px 30px;
   width: max-content;
   height: max-content;
   border-radius: 25px;
-  background-color:#604a37;
+  background-color: #604a37;
   font-size: 20px;
-  color: #FFF;
+  color: #fff;
   border: none;
-  
+  transition: all 0.5s;
 }
-.project-links:hover{
+.project-links:hover {
   background-color: #422911;
-  
-  transition: .3s;
-  
+  scale: 0.8;
 }
-.project-box{
+
+.project-box {
   display: flex;
 }
 
-.group{
+.group {
   position: relative;
-  
 }
-
-
-
-
 
 /* project & skill section responsive code */
 @media only screen and (max-width: 979px) {
@@ -424,10 +374,10 @@ figure figcaption button:hover{
     -ms-flex-preferred-size: calc(50% - 30px);
     flex-basis: calc(50% - 30px);
   }
-  .project-box{
+  .project-box {
     justify-content: center;
     flex-flow: row wrap;
-    padding: .5rem;
+    padding: 0.5rem;
   }
   .ag-courses-item_title {
     font-size: 24px;
@@ -438,8 +388,6 @@ figure figcaption button:hover{
   .ag-format-container {
     width: 96%;
   }
- 
-
 }
 @media only screen and (max-width: 639px) {
   .ag-courses_item {
@@ -452,13 +400,13 @@ figure figcaption button:hover{
 
     font-size: 24px;
   }
-  
-  .project-box{
+
+  .project-box {
     justify-content: center;
     flex-flow: row wrap;
     padding: 1rem;
   }
- 
+
   .ag-courses-item_link {
     padding: 22px 40px;
   }
@@ -471,14 +419,17 @@ figure figcaption button:hover{
   }
 
   h1 {
-    font-size: 90px;
+    font-size: 80px;
     line-height: 100px;
   }
 
   .image-wrapper {
     padding-top: 75%;
   }
-
+  .hero-scroller {
+    height: 120vh;
+    overflow: hidden;
+  }
   .content {
     max-width: 90%;
   }
@@ -486,7 +437,9 @@ figure figcaption button:hover{
   p {
     font-size: 2em;
   }
-  
 }
 
-
+#icons:hover {
+  scale: 1.5;
+  transition: all 0.3s;
+}
